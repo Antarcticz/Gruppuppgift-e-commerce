@@ -1,3 +1,4 @@
+/* ___________________________________________________HOME_________________________________________________ */
 * {
     margin: 0;
     padding: 0;
@@ -14,30 +15,34 @@ html, body {
     margin: 0 auto;
 }
 
-.index {
+/* .section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 65%;
     margin: auto;
+} */
+.section-1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 61.5%;
+    margin-bottom: 3.5rem;
 }
-.index .container {
-    width: 100%;
-    margin: auto;
-}
-.index .container h1 {
+.section-1 .container h1 {
     font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 1.5rem;
     letter-spacing: 3px;
 }
-.index .container h2 {
+.section-1 .container h2 {
     font-size: 4rem;
     padding-bottom: 0.5rem;
 }
 
 .btn {
     padding: 1.2em 3em;
+    font-family: poppins-regular, poppins;
     border: none;
     outline-color: transparent;
     cursor: pointer;
@@ -48,8 +53,7 @@ html, body {
     color: #fff;
     margin-top: 1.5rem;
     font-size: 1rem;
-    letter-spacing: 3px;
-    font-family: poppins-regular, poppins;
+    letter-spacing: 3px;  
 }
 .btn-shopnow:hover {
     background-color: hsl(351, 95%, 69%);
@@ -57,3 +61,51 @@ html, body {
 .btn-shopnow:active {
     background-color: hsl(351, 95%, 49%);
 }
+
+.section-2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    background-color: #fff;
+}
+.section-2 .container .shop-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 2rem 0;
+    color: #616161;
+    
+}
+.section-2 .container .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    padding: 1rem;
+}
+.btn-load {
+    font-size: 1rem;
+    font-family: poppins-regular, poppins;
+    border: 2px solid #2929295f;
+    padding: 1em 3em;
+    margin: 2rem 0;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.btn-load:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+.btn-load:active {
+    background-color: hsl(0, 0%, 70%);
+}
+.section-2 .container .icon-sm {
+    width: .7em;
+}
+/* ___________________________________________________LOGIN_________________________________________________ */
