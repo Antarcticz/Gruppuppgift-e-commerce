@@ -12,6 +12,7 @@ const Navbar = () => {
                 <li><NavLink to="/contact">CONTACT</NavLink></li>
                 <img className='icon-sm' src="/Placeholders/search.svg" alt="" />
                 <li><NavLink to="/login"><span>Login</span></NavLink></li>
+                {/* <li><NavLink to="/registration"><span>Registration</span></NavLink></li> */}
                 <img className='icon-sm' src="/Placeholders/shopping-cart.svg" alt="" />
             </ul>
         </div>
