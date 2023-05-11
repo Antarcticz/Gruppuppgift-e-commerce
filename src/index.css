@@ -14,14 +14,7 @@ html, body {
     width: 100%;
     margin: 0 auto;
 }
-
-/* .section-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
-    margin: auto;
-} */
+/* ___________________________________________________SECTION 1____________________________________________ */
 .section-1 .container {
     display: flex;
     justify-content: space-between;
@@ -37,7 +30,7 @@ html, body {
 }
 .section-1 .container h2 {
     font-size: 4rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .btn {
@@ -61,7 +54,7 @@ html, body {
 .btn-shopnow:active {
     background-color: hsl(351, 95%, 49%);
 }
-
+/* ___________________________________________________SECTION 2____________________________________________ */
 .section-2 .container {
     display: flex;
     flex-wrap: wrap;
@@ -70,8 +63,11 @@ html, body {
     align-items: center;
     width: 100%;
     margin: auto;
-    padding-top: 4rem;
+    padding: 4rem 0 1rem 0;
     background-color: #fff;
+}
+.section-2 .container h2 {
+    font-size: 3rem;
 }
 .section-2 .container .shop-links {
     display: flex;
@@ -80,7 +76,13 @@ html, body {
     list-style: none;
     padding: 2rem 0;
     color: #616161;
-    
+}
+.section-2 .container .shop-links li {
+    cursor: pointer;
+}
+.section-2 .container .shop-links li,
+.section-2 .container .shop-links p {
+    padding: 0 .35em 0 .35em;
 }
 .section-2 .container .product-container {
     display: flex;
@@ -89,6 +91,22 @@ html, body {
     align-items: center;
     width: 65%;
     padding: 1rem;
+    background-color: #fff;
+}
+.section-2 .container .product-container .card {
+    cursor: pointer;
+}
+.section-2 .container .product-container .card p, 
+.section-2 .container .product-container .card span {
+    padding: 1rem 0 0.5rem 0;
+}
+.section-2 .container .product-container .card span {
+    color: #616161;
+    padding-right: 1rem;
+}
+.old-price {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
 }
 .btn-load {
     font-size: 1rem;
@@ -108,4 +126,73 @@ html, body {
 .section-2 .container .icon-sm {
     width: .7em;
 }
+/* ___________________________________________________SECTION 3____________________________________________ */
+.section-3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    background-color: #faefef;
+}
+.section-3 .container .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    padding: 1rem;
+}
+.section-3 .container .product-container .card {
+    background-color: #fff;
+    cursor: pointer;
+}
+.section-3 .container .product-container .card p, 
+.section-3 .container .product-container .card span {
+    padding: 1rem 0 0.5rem 0;
+    margin: 1rem;
+}
+.section-3 .container .product-container .card span {
+    color: #616161;
+}
+
+.section-3 .container .product-container .onSale-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 369px;
+    height: 406px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.section-3 .container .product-container .onSale-card h1 {
+    color: #fa3150;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+.section-3 .container .product-container .onSale-card h2 {
+    font-size: 3rem;
+}
+.section-3 .container .product-container .onSale-card h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.section-3 .container .product-container .onSale-card p {
+    color: #616161;;
+}
+.section-3 .container .product-container .onSale-card span {
+    padding-top: 2.5rem;
+}
+/* ___________________________________________________SECTION 4____________________________________________ */
+
+/* ___________________________________________________SECTION 5____________________________________________ */
+
 /* ___________________________________________________LOGIN_________________________________________________ */
+
+/* ___________________________________________________REGISTRATION__________________________________________ */
+
+/* ___________________________________________________CONTACT_______________________________________________ */
