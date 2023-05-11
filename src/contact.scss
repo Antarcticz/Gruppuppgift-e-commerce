@@ -1,0 +1,119 @@
+.contact-page{
+    .hero-banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(207, 207, 207);
+        margin-bottom: 50px;
+    }
+
+    .h1-banner{
+        margin-bottom: 20px;
+    }
+
+    .h3-banner{
+        letter-spacing: 3px;
+        font-weight: 200;
+    }
+
+    .contact-form{
+        margin: auto;
+        height: 50vh;
+        width: 60vw;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #e9e9e9;
+
+        .p-header{
+            margin-bottom: 25px;
+            text-decoration: underline;
+
+        }
+
+        .form-group{
+            // width: 100%;
+            display: inline-block;
+            margin-bottom: 20px;
+            
+            
+
+            input{
+                display: flex;
+                padding: 5px;
+                width: 520px;
+                height: 45px;
+                background-color: #f0f0f0;
+                border: solid #f0f0f0;
+                border-radius: 5px;
+                
+                
+            }
+            
+            input:focus {
+                outline-width: 0;
+            }
+
+            #email, #company, .labelClass{
+                margin-left: 40px;
+            }
+        }
+
+        .large-textbox{
+            
+            #l-textbox{
+                width: 100%;
+                height: 100px;
+                background-color: #f0f0f0;
+                border: #f0f0f0;
+            } 
+            
+            #check{
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #check:hover{
+                cursor: pointer;
+            }
+              input {
+                width: 15px;
+                height: 15px;
+                padding: 5px;
+                margin: 0;
+                vertical-align: bottom;
+                position: relative;
+                top: -1px;
+              }
+              input:focus {
+                outline-width: 0;
+            }
+
+            .contact-btn{
+                display: block;
+                margin-top: 30px;
+                height: 50px;
+                width: 130px;
+                border: none;
+                background-color: rgb(255, 0, 64);
+                font-size: 1rem;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            
+            .contact-btn:hover{
+                transition: ease 0.5ms;
+                background-color:  rgb(212, 44, 86) ;
+                
+                
+            }
+
+
+        }
+    }
+    
+}
