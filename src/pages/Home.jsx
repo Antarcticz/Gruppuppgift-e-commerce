@@ -14,7 +14,7 @@ const Home = () => {
         <img src="/Placeholders/625x647.svg" alt="" />
         </div>
       </div>
-
+      {/* ____________________________________SECTION 2____________________________________ */}
       <div className="section-2">
         <div className="container">
           <h2>Best Collection</h2>
@@ -84,7 +84,7 @@ const Home = () => {
           <button className='btn-load'>LOAD MORE <img className='icon-sm' src="/Placeholders/rotate-cw.svg" alt="" /></button>
         </div>
       </div>
-
+      {/* ____________________________________SECTION 3____________________________________ */}
       <div className="section-3">
         <div className="container">
           <div className="product-container">
@@ -110,17 +110,69 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/* ____________________________________SECTION 4____________________________________ */}
       <div className="section-4">
         <div className="container">
+          <h2>Top selling products in this week</h2>
           <div className="product-container">
             <div className="card">
-
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Apple watch series</p>
+              <span className='old-price'>$120.00</span><span>$80.00</span>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Gumshoes black fashion</p>
+              <span className='old-price'>$120.00</span><span>$80.00</span>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Woman white dress</p>
+              <span>$30.00</span>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Kettle water boiler</p>
+              <span>$30.00</span>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Congee cooking rice cooker</p>
+              <span>$30.00</span>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/270x295.svg" alt="" />
+              <p>Pizza tomato sauce kebab</p>
+              <span>$30.00</span>
+            </div>
+          </div>
+          <button>&#60;</button><button>&#62;</button>
+          <div className="product-container-2">
+            <div className="card">
+              <img src="/Placeholders/370x295.svg" alt="" />
+              <p>Table lamp 1562 LTG modal</p>
+              <span>Best dress for everyone ed totam velit risus viverra <br></br></span>
+              <span>nobis donec recusandae perspiciatis incididuno</span>
+              <h6>POST BY: ADMIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMENTS 13</h6>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/370x295.svg" alt="" />
+              <p>Table lamp 1562 LTG modal</p>
+              <span>Best dress for everyone ed totam velit risus viverra <br></br></span>
+              <span>nobis donec recusandae perspiciatis incididuno</span>
+              <h6>POST BY: ADMIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMENTS 13</h6>
+            </div>
+            <div className="card">
+              <img src="/Placeholders/370x295.svg" alt="" />
+              <p>Table lamp 1562 LTG modal</p>
+              <span>Best dress for everyone ed totam velit risus viverra <br></br></span>
+              <span>nobis donec recusandae perspiciatis incididuno</span>
+              <h6>POST BY: ADMIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMENTS 13</h6>
             </div>
           </div>
         </div>
       </div>
-
+      {/* ____________________________________SECTION 5____________________________________ */}
       <div className="section-5"></div>
     </div>
   )
