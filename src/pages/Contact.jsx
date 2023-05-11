@@ -1,5 +1,6 @@
 import React from 'react'
-import { Form } from 'react-router-dom'
+// import { Form } from 'react-router-dom'
+// import { GoogleMap, useLoadScript} from 'google-map-react'
 import '../contact.scss'
 
 const Contact = () => {
@@ -40,9 +41,15 @@ const Contact = () => {
       </form>
 
       <div className='googleMaps'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58789.24289077472!2d-43.254077324925035!3d-22.938156199616405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20Brasilien!5e0!3m2!1ssv!2sse!4v1683814264821!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      </div>
+
+      
 
       </div>
+
+      <div className="footer">
+        <p className="copyright">© 2023 bmarketo. All rights reserved.</p>
 
       </div>
       
