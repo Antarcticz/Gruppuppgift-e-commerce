@@ -173,7 +173,9 @@ const Home = () => {
         </div>
       </div>
       {/* ____________________________________SECTION 5____________________________________ */}
-      <div className="section-5"></div>
+      <div className="section-5">
+        <img src="https://goo.gl/maps/WatHqr16z3UmMaQ1A" alt="" />
+      </div>
     </div>
   )
 }
