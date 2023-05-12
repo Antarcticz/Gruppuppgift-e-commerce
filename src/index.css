@@ -38,6 +38,9 @@ html, body {
     font-size: 4rem;
     padding-bottom: .5rem;
 }
+.section-1 .container img {
+    cursor: pointer;
+}
 
 .btn {
     padding: 1.2em 3em;
@@ -151,13 +154,14 @@ html, body {
     padding: 1rem;
 }
 .section-3 .container .product-container .card {
+    height: 406px;
     background-color: #fff;
     cursor: pointer;
 }
 .section-3 .container .product-container .card p, 
 .section-3 .container .product-container .card span {
     padding: 1rem 0 0.5rem 0;
-    margin: 1rem;
+    margin:  0.5rem 0 0 1rem;
     font-size: 1.2rem;
 }
 .section-3 .container .product-container .card span {
@@ -229,6 +233,22 @@ html, body {
     color: #616161;
     padding: 0 1rem 1rem 0;
 }
+
+.btn-arrows {
+    padding: .9em 1.2em;
+    margin: 2rem .5rem 1rem .5rem;
+    border-radius: .4em;
+    border: .5px solid #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-arrows:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+.btn-arrows:active {
+    background-color: hsl(0, 0%, 70%);
+}
+
 .section-4 .container .product-container-2 {
     display: flex;
     flex-wrap: wrap;

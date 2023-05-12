@@ -146,7 +146,7 @@ const Home = () => {
               <span>$30.00</span>
             </div>
           </div>
-          <button>&#60;</button><button>&#62;</button>
+          <div><button className='btn-arrows'>&#60;</button><button className='btn-arrows'>&#62;</button></div>
           <div className="product-container-2">
             <div className="card">
               <img src="/Placeholders/370x295.svg" alt="" />
