@@ -1,0 +1,288 @@
+/* ___________________________________________________HOME_________________________________________________ */
+.btn {
+    font-family: poppins-regular, poppins;
+    font-size: 1rem;
+    border: none;
+    outline-color: transparent;
+    cursor: pointer;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f3f2f2;
+    /* ___________________________________________________SECTION 1________________________________________ */
+    .section-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 61.5%;
+        margin-bottom: 3.5rem;
+    
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-bottom: 1.5rem;
+            letter-spacing: 3px;
+        }
+        h2 {
+            font-size: 4rem;
+            padding-bottom: .5rem;
+        }
+        img {
+            cursor: pointer;
+        }
+        .btn-shopnow {
+            padding: 1.2em 3em;
+            background-color: hsl(351, 95%, 59%);
+            color: #fff;
+            margin-top: 1.5rem;
+            letter-spacing: 3px;
+        
+            &:hover {
+                background-color: hsl(351, 95%, 69%);
+            }
+            &:active {
+                background-color: hsl(351, 95%, 49%);
+            }
+        }
+    }
+    /* ___________________________________________________SECTION 2____________________________________________ */
+    .section-2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 4rem 0 1rem 0;
+        background-color: #fff;
+    
+        h2 {
+            font-size: 3rem;
+        }
+        .shop-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 2rem 0;
+            color: #616161;
+    
+            li {
+                cursor: pointer;
+            }
+            li, p {
+                padding: 0 .35em 0 .35em;
+            }
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 65%;
+            padding: 1rem;
+            background-color: #fff;
+
+            .card {
+                cursor: pointer;
+
+                p, span {
+                    padding: 1rem 0 0.5rem 0;
+                    font-size: 1.2rem;
+                }
+                span {
+                    color: #616161;
+                    padding-right: 1rem;
+                }
+            }
+        }
+        .btn-load {
+            border: 2px solid #2929295f;
+            padding: 1em 3em;
+            margin: 2rem 0;
+            background-color: hsl(0, 0%, 100%);
+
+            &:hover {
+                background-color: hsl(0, 0%, 80%);
+            }
+            &:active {
+                background-color: hsl(0, 0%, 70%);
+            }
+        }
+        .icon-sm {
+            width: .7em;
+        }
+    }
+    /* ___________________________________________________SECTION 3____________________________________________ */
+    .section-3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 4rem 0 4rem 0;
+        background-color: #faefef;
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 65%;
+            padding: 1rem;
+
+            .card {
+                height: 406px;
+                background-color: #fff;
+                cursor: pointer;
+
+                p, span {
+                    padding: 1rem 0 0.5rem 0;
+                    margin:  0.5rem 0 0 1rem;
+                    font-size: 1.2rem;
+                }
+                span {
+                    color: #616161;
+                }
+            }
+        }
+        .onSale-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 369px;
+            height: 406px;
+            border: 1px solid #aeaeae60;
+            background-color: #fff;
+            cursor: pointer;
+
+            h1 {
+                color: #fa3150;
+                font-weight: 600;
+                letter-spacing: normal;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+                padding: 1.5rem 0 1.5rem 0;
+            }
+            p {
+                color: #616161;
+            }
+            span {
+                padding-top: 2.5rem;
+            }
+        }
+    }
+    /* ___________________________________________________SECTION 4____________________________________________ */
+    .section-4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 4rem 0 4rem 0;
+        background-color: #fff;
+
+        h2 {
+            font-size: 2rem;
+            padding: 2rem 0 5rem 0;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 96%;
+            padding: 1rem;
+
+            .card {
+                cursor: pointer;
+
+                p, span {
+                    padding: 1rem 0 0.5rem 0;
+                    font-size: 1.2rem;
+                }
+                span {
+                    color: #616161;
+                    padding: 0 1rem 1rem 0;
+                }
+            }
+        }
+        .btn-arrows {
+            padding: .9em 1.2em;
+            margin: 2rem .5rem 1rem .5rem;
+            border-radius: .4em;
+            border: .5px solid #000;
+            font-weight: 600;
+
+            &:hover {
+                background-color: hsl(0, 0%, 80%);
+            }
+            &:active {
+                background-color: hsl(0, 0%, 70%);
+            }
+        }
+        .product-container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 65%;
+            padding: 1rem;
+
+            .card {
+                cursor: pointer;
+
+                p {
+                    padding: 1rem 0 1.5rem 0;
+                    font-size: 1.2rem;
+                }
+                span {
+                    color: #616161;
+                }
+                h6 {
+                    color: #aeaeae;
+                    padding: 1.5rem 0 1rem 0;
+                }
+            }
+        }
+    }
+    /* ___________________________________________________SECTION 5____________________________________________ */
+}
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+    
+
+
