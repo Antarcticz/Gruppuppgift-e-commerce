@@ -1,9 +1,9 @@
 import React from 'react'
-// import { Form } from 'react-router-dom'
-// import { GoogleMap, useLoadScript} from 'google-map-react'
 import '../contact.scss'
+// import GoogleMaps from '../components/GoogleMaps/GoogleMaps'
 
 const Contact = () => {
+
   return (
     <div className='contact-page'>
       <div className='hero-banner'>
@@ -20,7 +20,7 @@ const Contact = () => {
       </div>
       <div className='form-group'>
         <label className='labelClass' htmlFor="email">*Your Email</label>
-        <input type="text" name="email" id="email" />
+        <input type="emaail" name="email" id="email" />
       </div>
       <div className='form-group'>
         <label htmlFor="phoneNumber">Phone Number</label>
@@ -39,21 +39,7 @@ const Contact = () => {
       </div>
 
       </form>
-
-      <div className='googleMaps'>
-      
       </div>
-
-      
-
-      </div>
-
-      <div className="footer">
-        <p className="copyright">© 2023 bmarketo. All rights reserved.</p>
-
-      </div>
-      
-
 
     </div>
   )

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Products from './pages/Products'
+import Footer from './components/footer/Footer'
 
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
           <Route path='login' element={<Login />} />
         </Routes>
       </div>
+      <Footer/>
+
     </BrowserRouter>
   )
 }
