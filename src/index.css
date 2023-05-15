@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: poppins-regular, poppins;
+    background-color: #f3f2f2;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+}
+.index .container {
+    width: 100%;
+    margin: auto;
+}
+.index .container h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    letter-spacing: 3px;
+}
+.index .container h2 {
+    font-size: 4rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn {
+    padding: 1.2em 3em;
+    border: none;
+    outline-color: transparent;
+    cursor: pointer;
+}
+
+.btn-shopnow {
+    background-color: hsl(351, 95%, 59%);
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-family: poppins-regular, poppins;
+}
+.btn-shopnow:hover {
+    background-color: hsl(351, 95%, 69%);
+}
+.btn-shopnow:active {
+    background-color: hsl(351, 95%, 49%);
+}
