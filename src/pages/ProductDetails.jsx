@@ -117,6 +117,7 @@ const ProductDetails = () => {
           </div>
         </div>    
       </div>
+      {/* ____________________________________SECTION 4____________________________________ */}
       <div className='section-4'>
         <div className='product-container-sm'>
           <div className='card'>

@@ -328,7 +328,10 @@
             .card {
                 display: flex;
                 justify-content: space-evenly;
-                cursor: pointer;
+                
+                img {
+                    cursor: pointer;
+                }
             }
         }
     }
