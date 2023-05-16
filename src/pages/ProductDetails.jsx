@@ -39,7 +39,9 @@ const ProductDetails = () => {
             <p>$30</p>
           </div>
           <div className="addToCart">
-            <p>-2+</p>{/* Make into button */}
+            <button className='btn-minus'>-</button>
+            <div className='count'><p>2</p></div>
+            <button className='btn-plus'>+</button>
             <button className='btn btn-cart'>Add to Cart</button>
           </div>
           <div className="product-color">
@@ -49,7 +51,7 @@ const ProductDetails = () => {
             <p>SKU:N/A</p>
           </div>
           <div className="wishlist">
-            <p>Add to wishlist</p>{/* Make into button */}
+            <button className='btn btn-wishlist'>Add to wishlist</button>
           </div>
           <div className="category">
             <p>Category: Table Lamp, Light</p>
@@ -92,6 +94,39 @@ const ProductDetails = () => {
       {/* ____________________________________SECTION 3____________________________________ */}
       <div className="section-3">
         <h2>Related Products</h2>
+        <div className="product-container">
+          <div className="card">
+            <img src="/Placeholders/270x295.svg" alt="" />
+            <p>Gumshoes black fashion</p>
+            <span className='old-price'>$120.00</span><span>$80.00</span>
+          </div>
+          <div className="card">
+            <img src="/Placeholders/270x295.svg" alt="" />
+            <p>Woman white dress</p>
+            <span>$30.00</span>
+          </div>
+          <div className="card">
+            <img src="/Placeholders/270x295.svg" alt="" />
+            <p>Kettle water boiler</p>
+            <span>$30.00</span>
+          </div>
+          <div className="card">
+            <img src="/Placeholders/270x295.svg" alt="" />
+            <p>Congee cooking rice cooker</p>
+            <span>$30.00</span>
+          </div>
+        </div>    
+      </div>
+      <div className='section-4'>
+        <div className='product-container-sm'>
+          <div className='card'>
+            <img src="/Placeholders/200x122.svg" alt="" />
+            <img src="/Placeholders/200x122.svg" alt="" />
+            <img src="/Placeholders/200x122.svg" alt="" />
+            <img src="/Placeholders/200x122.svg" alt="" />
+            <img src="/Placeholders/200x122.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   )
