@@ -34,6 +34,10 @@
 
             .img-big {
                 padding-bottom: .1rem;
+
+                img {
+                    cursor: pointer;
+                }
             }
             .img-sm {
                 display: flex;
@@ -41,6 +45,10 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+
+                img {
+                    cursor: pointer;
+                }
             }
         }
         .container-right {
@@ -269,6 +277,7 @@
                 position: relative;
                 left: 91.3%;
                 bottom: 82.5%;
+                cursor: pointer;
             }
         }
     }
@@ -304,6 +313,7 @@
             }
         }
     }
+    /* ___________________________________________________SECTION 4________________________________________ */
     .section-4 {
         display: flex;
         justify-content: center;
@@ -318,6 +328,7 @@
             .card {
                 display: flex;
                 justify-content: space-evenly;
+                cursor: pointer;
             }
         }
     }
