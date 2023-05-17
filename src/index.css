@@ -110,6 +110,8 @@ input[type=email] {
     font-size: 12px;
     font-weight: 80;
     text-align: left;
+    color: #ff0000;
+    text-align: right;
   }
 
   .btn-submit{
@@ -122,4 +124,13 @@ input[type=email] {
     font-size: 11px;
     height: 33px;
     width: 94px;
+    margin-top: 40px;
+    margin-right: 600px;
   }
+
+  .checkbox{
+    margin-right: 560px;
+    border: none;
+  }
+
+

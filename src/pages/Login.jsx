@@ -18,8 +18,8 @@ const Login = () => {
 					<input type="passw" name="passw" id="passw"/> 
 				</div>
         <div>
-      <input type="checkbox" id="checkbox" name="checkbox" checked/>
-      <label for="checkbox">Please keep me logged in</label>
+      <label className="checkbox"> 
+      <input type="checkbox" name="checkbox" value="checkbox"/>Please keep me logged in</label>
       </div>
       <div>
         <button className='btn-submit' type='submit'>Submit</button>
