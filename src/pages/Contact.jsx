@@ -1,5 +1,5 @@
 import React from 'react'
-import '../contact.scss'
+import '../scssPages/contact.scss'
 // import GoogleMaps from '../components/GoogleMaps/GoogleMaps'
 
 const Contact = () => {

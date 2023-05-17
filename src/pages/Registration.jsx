@@ -1,5 +1,5 @@
 import React from 'react'
-import '../registration.scss'
+import '../scssPages/registration.scss'
 
 const Registration = () => {
   return (
