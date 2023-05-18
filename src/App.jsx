@@ -7,7 +7,7 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Registration from './pages/Registration'
 import Add from './pages/Add'
-import Footer from './components/footer/Footer'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (

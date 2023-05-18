@@ -3,6 +3,7 @@ import '../scssPages/home.scss'
 
 const Home = () => {
   return (
+
     <div className="container-home">
       {/* ____________________________________SECTION 1____________________________________ */}
       <div className="section-1">
