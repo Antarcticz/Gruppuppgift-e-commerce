@@ -1,31 +1,44 @@
-import React from 'react'
 import '../scssPages/productDetails.scss'
+import React from 'react'
+import { FaCartPlus } from 'react-icons/fa'
+import useDoc from '../hooks/useDoc'
+import { useParams } from 'react-router-dom'
+import Loader from '../components/Loader/Loader'
 
 const ProductDetails = () => {
+
+  const { id } = useParams()
+  const { data : product, error, loading } = useDoc('products', id)
+
+  if(!product) return (
+    <div>
+      { loading && <Loader />}
+      { error && <p>{error}</p>}
+    </div>
+  )
+
   return (
     <div className="container-productDetails">
       <div className='banner'>
-        <img src="/Placeholders/1920x300.svg" alt="" />
+        <img src="https://static.euronews.com/articles/stories/06/48/94/10/1440x810_cmsv2_72145961-5fb7-5e54-852d-997299cf9e10-6489410.jpg" alt="" />
       </div>
       {/* ____________________________________SECTION 1____________________________________ */}
       <div className='section-1'>
         <div className='container-left'>
           <div className='img-big'>
-            <img src="/Placeholders/501x430.svg" alt="" />
+            <img src={product.imageURL} className="img-fluid" />
           </div>
           <div className='img-sm'>
-            <img src="/Placeholders/120x113.svg" alt="" />
-            <img src="/Placeholders/120x113.svg" alt="" />
-            <img src="/Placeholders/120x113.svg" alt="" />
-            <img src="/Placeholders/120x113.svg" alt="" />
+            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imageURL} className="img-fluid" />
           </div>
         </div>
         <div className="container-right">
           <div className="product-info">
-            <h2>Young Star Smart Shoe in Fashion</h2>
-            <p>Lirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
-            <p>voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita</p>
-            <p>kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <h2>{product.name}</h2>
+            <p>{product.description}</p>
           </div>
           <div className="reviews">
             <div className='stars'>
@@ -36,7 +49,7 @@ const ProductDetails = () => {
             </div>
           </div>
           <div className="price">
-            <p>$30</p>
+            <p>${product.price}</p>
           </div>
           <div className="addToCart">
             <button className='btn-minus'>-</button>
@@ -68,26 +81,9 @@ const ProductDetails = () => {
         </ul>
         <div className='container-description'>
           <div className='description-text'>
-            <h2 className='spacing'>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</h2>
-            <p className='spacing'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-            <p>invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et cusam et</p>
-            <p>justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata santus est Lorem</p>
-            <p>ipsum dolor sit amet. Lorem ipsum dolor.</p>
-
-            <p className='spacing'>accusantium laborum pretium hic excepturi harum repellat facilisis convallis potenti,</p>
-            <p>adipiscing lectus aliqua. Asperiores repudiandae ipsam error erat, accusamus, cum taciti</p>
-            <p>unde?</p>
-
-            <p className='spacing'>Praesentium, pariatur, tempora consequuntur purus sapiente, iaculis vitae consequatur,</p>
-            <p>rhoncus earum eleifend, hendrerit ipsum rhoncus ex error, impedit! Alias laboris sequi curae</p>
-            <p>aptent? Eu sagittis eu, distinctio tortor? Dapibus delectus! Consequuntur luctus.</p>
-
-            <p className='spacing'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-            <p>invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et cusam et</p>
-            <p>justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata santus est Lorem</p>
-            <p>ipsum dolor sit amet. Lorem ipsum dolor.</p>
-
-            <img className='description-img' src="/Placeholders/469x356.svg" alt="" />
+            <h2 className='spacing'>{product.name}</h2>
+            <p className='spacing'>{product.description}</p>
+            <img src={product.imageURL} className='description-img' />
           </div>
         </div>
       </div>
@@ -96,24 +92,24 @@ const ProductDetails = () => {
         <h2>Related Products</h2>
         <div className="product-container">
           <div className="card">
-            <img src="/Placeholders/270x295.svg" alt="" />
-            <p>Gumshoes black fashion</p>
-            <span className='old-price'>$120.00</span><span>$80.00</span>
+            <img src={product.imageURL} className="img-fluid" />
+            <p>{product.name}</p>
+            <span className='old-price'>${product.price}</span><span>${product.price}</span>
           </div>
           <div className="card">
-            <img src="/Placeholders/270x295.svg" alt="" />
-            <p>Woman white dress</p>
-            <span>$30.00</span>
+            <img src={product.imageURL} className="img-fluid" />
+            <p>{product.name}</p>
+            <span>${product.price}</span>
           </div>
           <div className="card">
-            <img src="/Placeholders/270x295.svg" alt="" />
-            <p>Kettle water boiler</p>
-            <span>$30.00</span>
+            <img src={product.imageURL} className="img-fluid" />
+            <p>{product.name}</p>
+            <span>${product.price}</span>
           </div>
           <div className="card">
-            <img src="/Placeholders/270x295.svg" alt="" />
-            <p>Congee cooking rice cooker</p>
-            <span>$30.00</span>
+            <img src={product.imageURL} className="img-fluid" />
+            <p>{product.name}</p>
+            <span>${product.price}</span>
           </div>
         </div>    
       </div>
@@ -121,11 +117,11 @@ const ProductDetails = () => {
       <div className='section-4'>
         <div className='product-container-sm'>
           <div className='card'>
-            <img src="/Placeholders/200x122.svg" alt="" />
-            <img src="/Placeholders/200x122.svg" alt="" />
-            <img src="/Placeholders/200x122.svg" alt="" />
-            <img src="/Placeholders/200x122.svg" alt="" />
-            <img src="/Placeholders/200x122.svg" alt="" />
+          <img src={product.imageURL} className="img-fluid" />
+          <img src={product.imageURL} className="img-fluid" />
+          <img src={product.imageURL} className="img-fluid" />
+          <img src={product.imageURL} className="img-fluid" />
+          <img src={product.imageURL} className="img-fluid" />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const App = () => {
       <div className="container">
         <Routes>
           <Route index element={<Home />} />
-          <Route path='productDetails' element={<ProductDetails />} />
+          <Route path='products/:id' element={<ProductDetails />} />
           <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
           <Route path='registration' element={<Registration />} />

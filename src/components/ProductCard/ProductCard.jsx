@@ -4,7 +4,7 @@ import { FaCartPlus } from 'react-icons/fa'
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="col">
+    <div className="product-container">
       <div className="card h-100">
 
         <Link to={`/products/${product.id}`} className='text-dark text-decoration-none'>
@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
           </div>
         </Link>
         <div className="d-flex justify-content-between align-items-center p-3">
-          <button className="btn btn-info"><FaCartPlus /> Add To Cart</button>
+          <button className="btn btn-shopnow"><FaCartPlus /> SHOP NOW</button>
           <p className="text-danger h5">{product.price} :-</p>
         </div>
       </div>
