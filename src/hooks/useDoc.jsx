@@ -1,36 +1,36 @@
-// import { doc, getDoc } from 'firebase/firestore'
-// import { useEffect, useState } from 'react'
-// import { db } from '../firebase/config'
+import { doc, getDoc } from 'firebase/firestore'
+import { useEffect, useState } from 'react'
+import { db } from '../firebase/config'
 
-// const useDoc = (collection, id) => {
+const useDoc = (collection, id) => {
 
-//   const [data, setData] = useState(null)
-//   const [loading, setLoading] = useState(false)
-//   const [error, setError] = useState(null)
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
 
-//   useEffect(() => {
+  useEffect(() => {
 
-//     const getDocAsync = async () => {
+    const getDocAsync = async () => {
 
-//       setLoading(true)
-//       const docRef = doc(db, collection, id)
-//       const docSnapshot = await getDoc(docRef)
+      setLoading(true)
+      const docRef = doc(db, collection, id)
+      const docSnapshot = await getDoc(docRef)
 
-//       if(!docSnapshot.exists()) {
-//         setLoading(false)
-//         setError('Could not find that document')
-//       }
+      if(!docSnapshot.exists()) {
+        setLoading(false)
+        setError('Could not find that document')
+      }
 
-//       setData({ id: docSnapshot.id, ...docSnapshot.data() })
-//       setLoading(false)
-//     }
+      setData({ id: docSnapshot.id, ...docSnapshot.data() })
+      setLoading(false)
+    }
 
-//     getDocAsync()
+    getDocAsync()
 
-//   }, [])
+  }, [])
 
-//   return { data, error, loading }
-// }
+  return { data, error, loading }
+}
 
-// export default useDoc
+export default useDoc
