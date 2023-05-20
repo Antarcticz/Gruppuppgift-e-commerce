@@ -268,21 +268,26 @@
         }
         .container-description {
             display: flex;
+            flex-direction: column;
             height: 511px;
             border: 1px solid;
             border-color: transparent transparent #aeaeae60 transparent;
-            .spacing {
-                padding-bottom: 1.2rem;
-            }
-            p {
-                padding-bottom: .6rem;
-                color: #616161;;
-            }
-            .description-img {
-                margin-left: 100%;
-                width: 469px;
-                height: 356px;
-                cursor: pointer;
+
+            .description-text-img {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    padding-bottom: .6rem;
+                    color: #616161;;
+                }
+                .description-img {
+                    width: 469px;
+                    height: 356px;
+                    cursor: pointer;
+                }
             }
         }
     }

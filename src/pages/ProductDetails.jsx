@@ -80,8 +80,8 @@ const ProductDetails = () => {
           <li>SHIPPING & DELIVERY</li>
         </ul>
         <div className='container-description'>
-          <div className='description-text'>
             <h2 className='spacing'>{product.name}</h2>
+          <div className='description-text-img'>
             <p className='spacing'>{product.description}</p>
             <img src={product.imageURL} className='description-img' />
           </div>
