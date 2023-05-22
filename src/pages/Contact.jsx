@@ -3,7 +3,7 @@ import '../contact.scss'
 // import GoogleMaps from '../components/GoogleMaps/GoogleMaps'
 
 const Contact = () => {
-
+  
   return (
     <div className='contact-page'>
       <div className='hero-banner'>
