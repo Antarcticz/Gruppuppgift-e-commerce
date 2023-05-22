@@ -1,17 +1,4 @@
 /* ___________________________________________________HOME_________________________________________________ */
-.btn {
-    font-family: poppins-regular, poppins;
-    font-size: 1rem;
-    border: none;
-    outline-color: transparent;
-    cursor: pointer;
-}
-
-.old-price {
-    text-decoration: line-through;
-    text-decoration-thickness: 2px;
-}
-
 .container-home {
     display: flex;
     flex-direction: column;
@@ -27,7 +14,7 @@
         align-items: center;
         width: 61.5%;
         margin-bottom: 3.5rem;
-    
+
         h1 {
             font-size: 1.2rem;
             font-weight: 500;
@@ -39,6 +26,8 @@
             padding-bottom: .5rem;
         }
         img {
+            width: 625px;
+            height: 647px;
             cursor: pointer;
         }
         .btn-shopnow {
@@ -47,7 +36,7 @@
             color: #fff;
             margin-top: 1.5rem;
             letter-spacing: 3px;
-        
+
             &:hover {
                 background-color: hsl(351, 95%, 69%);
             }
@@ -57,74 +46,78 @@
         }
     }
     /* ___________________________________________________SECTION 2____________________________________________ */
-    .section-2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        padding: 4rem 0 1rem 0;
-        background-color: #fff;
-    
-        h2 {
-            font-size: 3rem;
-        }
-        .shop-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            padding: 2rem 0;
-            color: #616161;
-    
-            li {
-                cursor: pointer;
-            }
-            li, p {
-                padding: 0 .35em 0 .35em;
-            }
-        }
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            width: 65%;
-            padding: 1rem;
-            background-color: #fff;
+    // .section-2 {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 100%;
+    //     margin: auto;
+    //     padding: 4rem 0 1rem 0;
+    //     background-color: #fff;
 
-            .card {
-                cursor: pointer;
+    //     h2 {
+    //         font-size: 3rem;
+    //     }
+    //     .shop-links {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         list-style: none;
+    //         padding: 2rem 0;
+    //         color: #616161;
 
-                p, span {
-                    padding: 1rem 0 0.5rem 0;
-                    font-size: 1.2rem;
-                }
-                span {
-                    color: #616161;
-                    padding-right: 1rem;
-                }
-            }
-        }
-        .btn-load {
-            border: 2px solid #2929295f;
-            padding: 1em 3em;
-            margin: 2rem 0;
-            background-color: hsl(0, 0%, 100%);
+    //         li {
+    //             cursor: pointer;
+    //         }
+    //         li, p {
+    //             padding: 0 .35em 0 .35em;
+    //         }
+    //     }
+    //     .product-container {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: space-around;
+    //         align-items: center;
+    //         width: 65%;
+    //         padding: 1rem;
+    //         background-color: #fff;
 
-            &:hover {
-                background-color: hsl(0, 0%, 80%);
-            }
-            &:active {
-                background-color: hsl(0, 0%, 70%);
-            }
-        }
-        .icon-sm {
-            width: .7em;
-        }
-    }
+    // .card {
+    //     cursor: pointer;
+
+    //     img {
+    //         width: 270px;
+    //         height: 295px;
+    //     }
+    //     p, span {
+    //         padding: 1rem 0 0.5rem 0;
+    //         font-size: 1.2rem;
+    //     }
+    //     span {
+    //         color: #616161;
+    //         padding-right: 1rem;
+    //     }
+    // }
+    //     }
+    //     .btn-load {
+    //         border: 2px solid #2929295f;
+    //         padding: 1em 3em;
+    //         margin: 2rem 0;
+    //         background-color: hsl(0, 0%, 100%);
+
+    //         &:hover {
+    //             background-color: hsl(0, 0%, 80%);
+    //         }
+    //         &:active {
+    //             background-color: hsl(0, 0%, 70%);
+    //         }
+    //     }
+    //     .icon-sm {
+    //         width: .7em;
+    //     }
+    // }
     /* ___________________________________________________SECTION 3____________________________________________ */
     .section-3 {
         display: flex;
@@ -150,9 +143,14 @@
                 background-color: #fff;
                 cursor: pointer;
 
-                p, span {
+                img {
+                    width: 369px;
+                    height: 310px;
+                }
+                p,
+                span {
                     padding: 1rem 0 0.5rem 0;
-                    margin:  0.5rem 0 0 1rem;
+                    margin: 0.5rem 0 0 1rem;
                     font-size: 1.2rem;
                 }
                 span {
@@ -218,7 +216,12 @@
             .card {
                 cursor: pointer;
 
-                p, span {
+                img {
+                    width: 270px;
+                    height: 295px;
+                }
+                p,
+                span {
                     padding: 1rem 0 0.5rem 0;
                     font-size: 1.2rem;
                 }
@@ -254,6 +257,10 @@
             .card {
                 cursor: pointer;
 
+                img {
+                    width: 370px;
+                    height: 295px;
+                }
                 p {
                     padding: 1rem 0 1.5rem 0;
                     font-size: 1.2rem;
@@ -309,9 +316,11 @@
                     background-color: hsl(351, 95%, 59%);
                     cursor: pointer;
 
+
                     &:hover {
                         background-color: hsl(351, 95%, 69%);
                     }
+
                     &:active {
                         background-color: hsl(351, 95%, 49%);
                     }
