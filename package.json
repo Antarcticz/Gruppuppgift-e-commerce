@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.9.5",
     "firebase": "^9.22.0",
+=======
+    "bcryptjs": "^2.4.3",
+>>>>>>> b6808d416bbd45c5302c60c1c5c299b9a63f8b21
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",

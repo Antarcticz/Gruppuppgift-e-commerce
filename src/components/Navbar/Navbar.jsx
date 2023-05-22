@@ -1,10 +1,10 @@
-import './Navbar.css'
+import './Navbar.scss'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <div className="container">
+        <div className="container-navbar">
             <Link to="/"><img src="/Placeholders/Logo.svg" alt="" /></Link>
             <ul className="nav-links">
                 <li><NavLink to="/">HOME</NavLink></li>
