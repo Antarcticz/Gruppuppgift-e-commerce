@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Registration from './pages/Registration'
 import Footer from './components/footer/Footer'
+import Checkout from './pages/Checkout'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='contact' element={<Contact />} />
           <Route path='registration' element={<Registration/>} />
           <Route path='login' element={<Login />} />
+          <Route path='checkout' element={<Checkout />} />
         </Routes>
       </div>
       <Footer/>
