@@ -23,7 +23,7 @@ const Login = () => {
           <input type="checkbox" name="checkbox" value="checkbox"/>Please keep me logged in</label>
         </div>
         <div>
-          <button className='btn-submit' type='submit'>Submit</button>
+          <button className='btn-submit' type='submit'>Sign In</button>
         </div>
 		  </form>
     </div>       

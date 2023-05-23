@@ -1,11 +1,13 @@
-import { BrowserRouter, Routes, Route, Form } from 'react-router-dom'
+import './App.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import ProductDetails from './pages/ProductDetails'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Registration from './pages/Registration'
-import Footer from './components/footer/Footer'
+import Add from './pages/Add'
+import Footer from './components/Footer/Footer'
 
 
 const App = () => {
@@ -15,14 +17,14 @@ const App = () => {
       <div className="container">
         <Routes>
           <Route index element={<Home />} />
-          <Route path='productDetails' element={<ProductDetails />} />
+          <Route path='product-details/:id' element={<ProductDetails />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='registration' element={<Registration/>} />
           <Route path='login' element={<Login />} />
+          <Route path='registration' element={<Registration />} />
+          <Route path='add' element={<Add />} />
         </Routes>
       </div>
-      <Footer/>
-
+      <Footer />
     </BrowserRouter>
   )
 }
