@@ -6,7 +6,7 @@ import React from 'react'
 const Section2 = ({ products }) => {
 
     return (
-        <div className="section-2">
+        <div className="home-section-2">
             <h2>Best Collection</h2>
             <ul className="shop-links">
                 <li>All</li>
@@ -30,7 +30,7 @@ const Section2 = ({ products }) => {
             <div className="product-container">
 
                 {
-                    products.lenght > 0
+                    products.length > 0
                         ? products.map(product => <Card key={product.id} product={product} />)
                         : <h2>No products to show</h2>
                 }

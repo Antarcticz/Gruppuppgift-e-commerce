@@ -1,7 +1,7 @@
 import '../scssPages/productDetails.scss'
 import React from 'react'
-import { FaCartPlus } from 'react-icons/fa'
-import useDoc from '../hooks/useDoc'
+// import { FaCartPlus } from 'react-icons/fa'
+import useDoc from '../hooks/useDocs'
 import { useParams } from 'react-router-dom'
 import Loader from '../components/Loader/Loader'
 
@@ -24,7 +24,7 @@ const ProductDetails = () => {
         <img src="https://static.euronews.com/articles/stories/06/48/94/10/1440x810_cmsv2_72145961-5fb7-5e54-852d-997299cf9e10-6489410.jpg" alt="" />
       </div>
       {/* ____________________________________SECTION 1____________________________________ */}
-      <div className='section-1'>
+      <div className='productdetails-section-1'>
         <div className='container-left'>
           <div className='img-big'>
             <img src={product.imageURL} className="img-fluid" />
@@ -73,8 +73,8 @@ const ProductDetails = () => {
         </div>
       </div>
       {/* ____________________________________SECTION 2____________________________________ */}
-      <div className="section-2">
-        <ul className='section-2-navbar'>
+      <div className="productdetails-section-2">
+        <ul className='productdetails-section-2-navbar'>
           <li className='red'>DESCRIPTION</li>
           <li>ADDITIONAL INFO</li>
           <li>REVIEWS &#40;0&#41;</li>
@@ -89,7 +89,7 @@ const ProductDetails = () => {
         </div>
       </div>
       {/* ____________________________________SECTION 3____________________________________ */}
-      <div className="section-3">
+      <div className="productdetails-section-3">
         <h2>Related Products</h2>
         <div className="product-container">
           <div className="card">
@@ -115,7 +115,7 @@ const ProductDetails = () => {
         </div>
       </div>
       {/* ____________________________________SECTION 4____________________________________ */}
-      <div className='section-4'>
+      <div className='productdetails-section-4'>
         <div className='product-container-sm'>
           <div className='card'>
             <img src={product.imageURL} className="img-fluid" />
