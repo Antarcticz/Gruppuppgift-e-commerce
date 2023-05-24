@@ -27,18 +27,18 @@ const ProductDetails = () => {
       <div className='productdetails-section-1'>
         <div className='container-left'>
           <div className='img-big'>
-            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
           </div>
           <div className='img-sm'>
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
           </div>
         </div>
         <div className="container-right">
           <div className="product-info">
-            <h2>{product.name}</h2>
+            <h2>{product.productName}</h2>
             <p>{product.description}</p>
           </div>
           <div className="reviews">
@@ -80,12 +80,21 @@ const ProductDetails = () => {
           <li>REVIEWS &#40;0&#41;</li>
           <li>SHIPPING & DELIVERY</li>
         </ul>
-        <div className='container-description'>
-          <h2 className='spacing'>{product.name}</h2>
-          <div className='description-text-img'>
-            <p className='spacing'>{product.description}</p>
-            <img src={product.imageURL} className='description-img' />
+        <div className='container-product-description'>
+
+          <div className="container-name">
+            <h2 className='spacing'>{product.productName}</h2>
           </div>
+
+          <div className="container-description-and-img">
+            <div className='container-description'>
+              <p className='spacing'>{product.description}</p>
+            </div>
+            <div className="container-img">
+              <img src={product.imgUrl} className='description-img' />
+            </div>
+          </div>
+
         </div>
       </div>
       {/* ____________________________________SECTION 3____________________________________ */}
@@ -93,23 +102,23 @@ const ProductDetails = () => {
         <h2>Related Products</h2>
         <div className="product-container">
           <div className="card">
-            <img src={product.imageURL} className="img-fluid" />
-            <p>{product.name}</p>
+            <img src={product.imgUrl} className="img-fluid" />
+            <p>{product.productName.slice(0, 30)}...</p>
             <span className='old-price'>${product.price}</span><span>${product.price}</span>
           </div>
           <div className="card">
-            <img src={product.imageURL} className="img-fluid" />
-            <p>{product.name}</p>
+            <img src={product.imgUrl} className="img-fluid" />
+            <p>{product.productName.slice(0, 30)}...</p>
             <span>${product.price}</span>
           </div>
           <div className="card">
-            <img src={product.imageURL} className="img-fluid" />
-            <p>{product.name}</p>
+            <img src={product.imgUrl} className="img-fluid" />
+            <p>{product.productName.slice(0, 30)}...</p>
             <span>${product.price}</span>
           </div>
           <div className="card">
-            <img src={product.imageURL} className="img-fluid" />
-            <p>{product.name}</p>
+            <img src={product.imgUrl} className="img-fluid" />
+            <p>{product.productName.slice(0, 30)}...</p>
             <span>${product.price}</span>
           </div>
         </div>
@@ -118,11 +127,11 @@ const ProductDetails = () => {
       <div className='productdetails-section-4'>
         <div className='product-container-sm'>
           <div className='card'>
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
-            <img src={product.imageURL} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
+            <img src={product.imgUrl} className="img-fluid" />
           </div>
         </div>
       </div>

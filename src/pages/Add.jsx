@@ -8,9 +8,9 @@ const Add = () => {
 
     const dispatch = useDispatch()
     const [productData, setProductData] = useState({
-        name: '',
+        productName: '',
         price: '',
-        imageURL: '',
+        imgUrl: '',
         description: ''
     })
 
@@ -39,16 +39,16 @@ const Add = () => {
             <h1 className='text-center my-5'>Add a new product</h1>
             <form noValidate onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="name" className="form-label">Product Name:</label>
-                    <input type="text" className="form-control" id='name' value={productData.name} onChange={handleChange} />
+                    <label htmlFor="productName" className="form-label">Product Name:</label>
+                    <input type="text" className="form-control" id='productName' value={productData.productName} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="price" className="form-label">Product Price:</label>
                     <input type="number" inputMode='decimal' className="form-control" id='price' value={productData.price} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="imageURL" className="form-label">Image Url:</label>
-                    <input type="text" className="form-control" id='imageURL' value={productData.imageURL} onChange={handleChange} />
+                    <label htmlFor="imgUrl" className="form-label">Image Url:</label>
+                    <input type="text" className="form-control" id='imgUrl' value={productData.imgUrl} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="description" className="form-label">Product Description:</label>
