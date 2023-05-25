@@ -18,15 +18,15 @@
 
     .reg-form {
         display: flex;
-        margin: auto;
-        width: 60vw;
+        justify-content: center;
+        width: 70vw;
         height: 95vh;
         background-color: #ffffff;
 
         input,
         label {
             display: block;
-            width: 520px;
+            width: 40vw;
     
         }
     
