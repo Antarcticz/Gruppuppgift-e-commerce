@@ -8,6 +8,8 @@ import Login from './pages/Login'
 import Registration from './pages/Registration'
 import Add from './pages/Add'
 import Footer from './components/Footer/Footer'
+import Checkout from './pages/Checkout'
+
 
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
           <Route path='login' element={<Login />} />
           <Route path='registration' element={<Registration />} />
           <Route path='add' element={<Add />} />
+          <Route path='checkout' element={<Checkout />} />
         </Routes>
       </div>
       <Footer />
