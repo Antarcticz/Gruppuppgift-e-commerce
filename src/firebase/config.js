@@ -1,17 +1,18 @@
 import { initializeApp } from "firebase/app";
-import { getFireStore } from 'firebase/firestore'
+import { getFirestore } from 'firebase/firestore';
+
 
 const firebaseConfig = {
-  apiKey: processs.env.REACT_APP_API_KEY,
-  authDomain: "webshop-e1f37.firebaseapp.com",
-  projectId: "webshop-e1f37",
-  storageBucket: "webshop-e1f37.appspot.com",
-  messagingSenderId: "847741023900",
-  appId: "1:847741023900:web:cfda09afc65be0083e9f59"
+    apiKey: "AIzaSyApUi9PZGbmZQqNSwwmL9R7ei_W9pejwLE",
+    authDomain: "e-commerce-95f71.firebaseapp.com",
+    projectId: "e-commerce-95f71",
+    storageBucket: "e-commerce-95f71.appspot.com",
+    messagingSenderId: "1009384635778",
+    appId: "1:1009384635778:web:e5b0a256c3201c4cd2a39b"
 };
 
 initializeApp(firebaseConfig);
 
-const db = getFireStore()
+const db = getFirestore()
 
 export { db }
