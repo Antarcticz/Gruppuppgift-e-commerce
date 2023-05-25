@@ -1,22 +1,23 @@
 import React from 'react'
 import '../scssPages/login.scss'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
     <div id='login'>
-      <form action="LogIn">
+      <form noValidate>
         <div>
           <h1>Please Login to Your Account</h1>
         </div>
 		  	<div>
-          <h2>E-mail*</h2><h3>Don't have an Account yet?</h3>
-		  		<label htmlFor="email"></label>
+          <Link className='no-account' to={'/Registration'}>Don't have an Account yet?</Link>
+		  		<label className='email' htmlFor="email">Email*</label>
 		  		<input type="email" name="email" id="email"/> 
 		  	</div>
 		  	<div>
-          <h2>Password*</h2><h3>Forgot Your Password ?</h3>
-		  		<label htmlFor="passw"></label>
-		  		<input type="passw" name="passw" id="passw"/> 
+          <h3>Forgot Your Password ?</h3>
+		  		<label className='passw' htmlFor="passw">Password*</label>
+		  		<input type="password" name="passw" id="password"/> 
 		  	</div>
         <div>
           <label className="checkbox"> 

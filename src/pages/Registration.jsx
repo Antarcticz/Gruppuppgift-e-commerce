@@ -19,31 +19,6 @@ const Registration = () => {
           </div>
 
           <div className="form-reg-group">
-            <label htmlFor="streetName">Street Name*</label>
-            <input className="input-full-width" type="text" name='streepostalCode' />
-          </div>
-
-          <div className="form-reg-group reg-row">
-            <label htmlFor="postalCode">Postal Code*</label>
-            <input type="text" name='postalCode' />
-          </div>
-
-          <div className="form-reg-group reg-row">
-            <label className='mg-left' htmlFor="city">City*</label>
-            <input type="text" name='city' className='mg-left' />
-          </div>
-
-          <div className="form-reg-group reg-row">
-            <label htmlFor="mobile">Mobile*</label>
-            <input type="text" name='mobile' />
-          </div>
-
-          <div className="form-reg-group reg-row">
-            <label className='mg-left' htmlFor="company">Company*</label>
-            <input type="text" name='company' className='mg-left' />
-          </div>
-
-          <div className="form-reg-group">
             <label htmlFor="email">E-mail*</label>
             <input type="text" name='email' className="input-full-width" />
           </div>
@@ -58,10 +33,6 @@ const Registration = () => {
             <input type="text" name='cPassword' className="input-full-width" />
           </div>
 
-          <div className="form-reg-group">
-            <label htmlFor="profileImg">Upload Profile Image (Optional)*</label>
-            <input type="text" name='profileImg' className="input-full-width" />
-          </div>
 
           <div className="terms">
             <input type="checkbox" id='check' />

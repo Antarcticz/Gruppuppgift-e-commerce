@@ -1,4 +1,9 @@
 /* Login */
+.container{
+        width: 70%;
+        margin: auto;
+    }
+
 #login {
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -9,6 +14,7 @@
     margin-top: 50px;
     border: 1px #000 solid;
     border-style: none;
+
 
     h1{
         font-family: 'Times New Roman', Times, serif;
@@ -67,6 +73,24 @@
         width: 94px;
         margin-top: 40px;
         margin-right: 600px;
+    }
+
+    .no-account{
+        display: flex;
+        justify-content: flex-end;
+        width: 96%;
+    }
+    .email{
+        display: flex;
+        justify-content: center;
+        width: 12%;
+
+    }
+
+    .passw{
+        display: flex;
+        justify-content: flex-end;
+        width: 11%;
     }
 }
 
