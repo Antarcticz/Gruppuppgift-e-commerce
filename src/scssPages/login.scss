@@ -1,0 +1,77 @@
+/* Login */
+#login {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 758px;
+    height: 318px;
+    font-size: 13px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px #000 solid;
+    border-style: none;
+
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 80;
+        text-align: left;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 80;
+        text-align: left;
+        float: left;
+    }
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 80;
+        text-align: left;
+        color: #ff0000;
+        text-align: right;
+    }
+    input[type=email] {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: #f6f6f6;
+        border-style: none;
+        height: 33px;
+        width: 708px;
+    }
+    input[type=passw] {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: #f6f6f6;
+        border-style: none;
+        height: 33px;
+        width: 708px;
+    }
+    .checkbox{
+        margin-right: 560px;
+        border: none;
+    }
+    .btn-submit{
+        background-color: #ff0000;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 23px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 11px;
+        height: 33px;
+        width: 94px;
+        margin-top: 40px;
+        margin-right: 600px;
+    }
+}
+
+
+  
+   
+
+  
