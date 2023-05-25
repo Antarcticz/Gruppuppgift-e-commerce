@@ -19,7 +19,7 @@
     .reg-form {
         display: flex;
         justify-content: center;
-        width: 70vw;
+        width: 99vw;
         height: 95vh;
         background-color: #ffffff;
 
@@ -93,6 +93,10 @@
             background-color: rgb(212, 44, 86);
     
     
+        }
+
+        .danger{
+            color: firebrick;
         }
     }
 

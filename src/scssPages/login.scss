@@ -1,35 +1,21 @@
 /* Login */
-.container{
-        width: 70%;
-        margin: auto;
-    }
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 #login {
     background-color: rgb(255, 255, 255);
     text-align: center;
     width: 758px;
-    height: 318px;
+    height: 100vh;
     font-size: 13px;
-    margin: auto;
     margin-top: 50px;
     border: 1px #000 solid;
     border-style: none;
 
-
-    h1{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
-        font-weight: 80;
-        text-align: left;
-    }
-    h2{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
-        font-weight: 80;
-        text-align: left;
-        float: left;
-    }
-    h3{
+    h3 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 12px;
         font-weight: 80;
@@ -37,6 +23,7 @@
         color: #ff0000;
         text-align: right;
     }
+
     input[type=email] {
         width: 70%;
         padding: 12px 20px;
@@ -47,6 +34,7 @@
         height: 33px;
         width: 708px;
     }
+
     input[type=password] {
         width: 70%;
         padding: 12px 20px;
@@ -57,11 +45,13 @@
         height: 33px;
         width: 708px;
     }
-    .checkbox{
+
+    .checkbox {
         margin-right: 560px;
         border: none;
     }
-    .btn-submit{
+
+    .btn-submit {
         background-color: #ff0000;
         border: none;
         color: rgb(255, 255, 255);
@@ -75,27 +65,36 @@
         margin-right: 600px;
     }
 
-    .no-account{
+     .btn-submit:hover{
+        background-color: #b90000;
+        transition: ease 0.5ms;
+        cursor: pointer;
+     }
+
+    .no-account {
         display: flex;
         justify-content: flex-end;
         width: 96%;
     }
-    .email{
+
+    .email {
         display: flex;
         justify-content: center;
-        width: 12%;
-
+        width: 13%;
+        font-size: 16px;
     }
 
-    .password{
+    .password {
         display: flex;
         justify-content: flex-end;
-        width: 11%;
+        width: 13%;
+        font-size: 16px;
     }
+
+    #email,
+    #password {
+        height: 50px;
+    }
+
+
 }
-
-
-  
-   
-
-  
