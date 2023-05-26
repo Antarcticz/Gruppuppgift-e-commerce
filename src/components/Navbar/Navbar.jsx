@@ -14,6 +14,9 @@ const Navbar = () => {
                     <img className='icon-sm' src="/Placeholders/search.svg" alt="" />
                     <li><NavLink to="/login"><span>Login</span></NavLink></li>
                     <img className='icon-sm' src="/Placeholders/shopping-cart.svg" alt="" />
+                    <ul className="dropdown-menu dropdown-menu-end shopping-cart">
+                        <ShoppingCart />
+                    </ul>
                 </ul>
             </div>
         </nav>
