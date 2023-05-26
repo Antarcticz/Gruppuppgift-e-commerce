@@ -1,9 +1,13 @@
 .home-product-card {
     cursor: pointer;
+    border: 1px solid #aeaeae60;
 
     img {
         width: 270px;
         height: 295px;
+    }
+    p {
+        color: #363636;
     }
     p,
     span {
