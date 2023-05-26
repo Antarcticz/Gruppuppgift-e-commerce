@@ -1,7 +1,7 @@
 import React from 'react'
 import CartProduct from './CartProduct'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '../../store/features/shoppingCart/shoppingCartSlice'
+import { clearCart } from '../../store/shoppingCart/shoppingCartSlice'
 import { Link } from 'react-router-dom'
 
 const ShoppingCart = ({ checkout }) => {

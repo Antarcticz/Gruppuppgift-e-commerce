@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import { Link, NavLink } from 'react-router-dom'
+import ShoppingCart from '../ShoppingCart/ShoppingCart'
 
 
 const Navbar = () => {
