@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaTrash } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
-// import { addToCart, removeAll, removeOne } from '../../store/features/shoppingCart/shoppingCartSlice'
+import { addToCart, removeAll, removeOne } from '../../store/shoppingCart/shoppingCartSlice'
 import { Link } from 'react-router-dom'
 
 const CartProduct = ({ item }) => {

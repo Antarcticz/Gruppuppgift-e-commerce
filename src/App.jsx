@@ -18,11 +18,11 @@ const App = () => {
       <div className="container">
         <Routes>
           <Route index element={<Home />} />
+          <Route path='add' element={<Add />} />
           <Route path='product-details/:id' element={<ProductDetails />} />
           <Route path='contact' element={<Contact />} />
           <Route path='login' element={<Login />} />
           <Route path='registration' element={<Registration />} />
-          <Route path='add' element={<Add />} />
           <Route path='checkout' element={<Checkout />} />
         </Routes>
       </div>

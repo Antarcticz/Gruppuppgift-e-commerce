@@ -5,8 +5,6 @@ import { useSelector } from 'react-redux'
 const Checkout = () => {
 
   const { cart } = useSelector(state => state.shoppingCart)
-  // const { user } = useSelector(state => state.auth)
-
 
   const placeOrder = () => {
     const order = cart.map(item => {
