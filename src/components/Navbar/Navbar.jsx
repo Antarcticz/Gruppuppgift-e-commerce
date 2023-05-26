@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import { Link, NavLink } from 'react-router-dom'
+import ShoppingCart from '../ShoppingCart/ShoppingCart'
 
 
 const Navbar = () => {
@@ -13,7 +14,10 @@ const Navbar = () => {
                     <li><NavLink to="/contact">CONTACT</NavLink></li>
                     <img className='icon-sm' src="/Placeholders/search.svg" alt="" />
                     <li><NavLink to="/login"><span>Login</span></NavLink></li>
-                    <img className='icon-sm' src="/Placeholders/shopping-cart.svg" alt="" />
+                    <li><NavLink to="/checkout"><img className='icon-sm' src="/Placeholders/shopping-cart.svg" alt="" /></NavLink></li>
+                    {/* <li className="dropdown-menu dropdown-menu-end shopping-cart">
+                        <ShoppingCart />
+                    </li> */}
                 </ul>
             </div>
         </nav>
