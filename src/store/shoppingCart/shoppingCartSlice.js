@@ -5,7 +5,7 @@ const initialState = {
   totalQuantity: 0,
   totalAmount: 0
 }
-
+// THE ERROR IS COMMING FROM HERE!!!
 // const item = {
 //   product: { id, name, imageURL },
 //   quantity: 1
