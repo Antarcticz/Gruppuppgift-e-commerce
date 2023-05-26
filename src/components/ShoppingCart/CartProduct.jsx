@@ -17,7 +17,7 @@ const CartProduct = ({ item }) => {
   const del = () => {
     // bekräfta
     // if(confirm('are you sure?')) {
-      dispatch(removeAll(item.product.id))
+    dispatch(removeAll(item.product.id))
     // }
   }
 
