@@ -1,20 +1,24 @@
 /* Login */
-.container {
+.container-login {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #login {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     text-align: center;
     width: 758px;
-    height: 100vh;
+    height: 60vh;
     font-size: 13px;
     margin-top: 50px;
-    border: 1px #000 solid;
+    border: 1px solid #000;
     border-style: none;
+    margin-top: 10rem;
 
+    h1 {
+        padding-bottom: 3rem;
+    }
     h3 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 12px;
@@ -22,6 +26,7 @@
         text-align: left;
         color: #ff0000;
         text-align: right;
+        margin-right: 28px;
     }
 
     input[type=email] {
@@ -33,6 +38,7 @@
         border-style: none;
         height: 33px;
         width: 708px;
+        outline: none;
     }
 
     input[type=password] {
@@ -44,6 +50,7 @@
         border-style: none;
         height: 33px;
         width: 708px;
+        outline: none;
     }
 
     .checkbox {
@@ -52,7 +59,7 @@
     }
 
     .btn-submit {
-        background-color: #ff0000;
+        background-color: hsl(351, 95%, 59%);
         border: none;
         color: rgb(255, 255, 255);
         padding: 10px 23px;
@@ -62,14 +69,19 @@
         height: 33px;
         width: 94px;
         margin-top: 40px;
-        margin-right: 600px;
+        margin-right: 615px;
+        cursor: pointer;
+
+        &:hover {
+           background-color: hsl(351, 95%, 69%);
+           transition: ease 0.5ms;
+        }
+        &:active {
+           background-color: hsl(351, 95%, 49%);
+           transition: ease 0.5ms;
+        }
     }
 
-     .btn-submit:hover{
-        background-color: #b90000;
-        transition: ease 0.5ms;
-        cursor: pointer;
-     }
 
     .no-account {
         display: flex;
