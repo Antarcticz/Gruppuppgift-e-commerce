@@ -10,10 +10,10 @@ const Navbar = () => {
     const { totalQuantity } = useSelector(state => state.shoppingCart)
 
     return (
-        <nav className="navbar">
+        <nav className="navbar d-flex justify-content-center align-item-center p-5">
             <div className="container-navbar">
-                <Link to="/"><img src="/Placeholders/Logo.svg" alt="" /></Link>
-                <ul className="nav-links">
+                <Link className="navbar-brand" to="/"><img src="/Placeholders/Logo.svg" alt="" /></Link>
+                <ul className="nav-links gap-5" >
                     <li><NavLink to="/">HOME</NavLink></li>
                     <li><NavLink to="/add">ADD</NavLink></li>
                     <li><NavLink to="/contact">CONTACT</NavLink></li>

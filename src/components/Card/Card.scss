@@ -1,6 +1,7 @@
 .home-product-card {
     cursor: pointer;
     border: 1px solid #aeaeae60;
+    margin-top: 2rem;
 
     img {
         width: 270px;
@@ -17,6 +18,6 @@
     }
     span {
         color: #616161;
-        padding-right: 1rem;
+        // padding-right: 1rem;
     }
 }

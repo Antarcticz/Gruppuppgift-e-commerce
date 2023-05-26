@@ -5,15 +5,16 @@ import React from 'react'
 const Section1 = () => {
   return (
     <div className="home-section-1">
-      <div>
-        <h1>WELCOME TO BMARKETO SHOP</h1>
-        <h2>Exclusive Chair</h2>
-        <h2>gold Collection.</h2>
-        <button className='btn btn-shopnow'>SHOP NOW</button>
-      </div>
-      <div>
-        <img src="/Placeholders/625x647.svg" alt="" />
-        {/* <img src={product.imageURL} alt={product.name} /> */}
+      <div className="home-container-inner">
+        <div className='home-container-left'>
+          <h1>WELCOME TO BMARKETO SHOP</h1>
+          <h2>Exclusive Chair</h2>
+          <h2>gold Collection.</h2>
+          <button className='btn btn-shopnow'>SHOP NOW</button>
+        </div>
+        <div className='home-container-right'>
+          <img src="https://nerdable.com/wp-content/uploads/2021/11/most-expensive-suits-in-the-world-336x224.jpg" alt="" />
+        </div>
       </div>
     </div>
   )

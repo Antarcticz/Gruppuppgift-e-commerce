@@ -4,7 +4,7 @@ import useDoc from '../hooks/useDocs'
 import Loader from '../components/Loader/Loader'
 import { FaCartPlus } from 'react-icons/fa'
 import { useParams } from 'react-router-dom'
-import { addToCart } from '../store/shoppingCart/shoppingCartSlice'
+import { addToCart, removeOne } from '../store/shoppingCart/shoppingCartSlice'
 import { useDispatch } from 'react-redux'
 
 
@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
   const { id } = useParams()
   const { data: product, error, loading } = useDoc('products', id)
-
+  
   const dispatch = useDispatch()
 
   if (!product) return (
@@ -57,8 +57,9 @@ const ProductDetails = () => {
             <p>${product.price}</p>
           </div>
           <div className="addToCart">
+            
             <button className='btn-minus'>-</button>
-            <div className='count'><p>2</p></div>
+            <div className='count'><p>1</p></div>
             <button className='btn-plus'>+</button>
             <button className='btn btn-cart'onClick={() => dispatch(addToCart(product))}>Add to Cart <FaCartPlus /></button>
           </div>
