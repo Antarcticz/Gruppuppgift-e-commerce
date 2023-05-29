@@ -1,3 +1,4 @@
+import '../scssPages/checkout.scss'
 import React from 'react'
 import ShoppingCart from '../components/ShoppingCart/ShoppingCart'
 import { useSelector } from 'react-redux'
@@ -14,12 +15,11 @@ const Checkout = () => {
   }
 
   return (
-    <div className='mt-5'>
-      <h1 className='mb-5'>Complete your purchase</h1>
+    <div className='container-checkout'>
+      <h1 className='mt-5 mb-5'>Complete your purchase</h1>
       <ShoppingCart checkout={true} />
 
-      <h2>Confirm your shipping address</h2>
-      <button className='btn btn-success'>Place Order</button>
+      <button className='btn btn-success mt-5 mb-5'>Place Order</button>
     </div>
   )
 }

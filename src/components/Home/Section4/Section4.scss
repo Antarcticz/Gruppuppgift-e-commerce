@@ -23,7 +23,8 @@
         padding-top: 1rem;
 
 
-        .card {
+        .home-card {
+            border: 1px solid #aeaeae60;
             cursor: pointer;
 
 
@@ -32,7 +33,7 @@
                 height: 295px;
             }
             p, span {
-                padding: 1rem 0 0.5rem 0;
+                padding: 1rem 0 0 0;
                 font-size: 1.2rem;
             }
             span {
@@ -45,9 +46,10 @@
         padding: .7em 1em;
         margin: 2rem .5rem 1rem .5rem;
         border-radius: .4em;
-        border: .5px solid #000;
+        border: .5px solid #2929295f;
         font-weight: 600;
         background-color: #fff;
+        color: #363636;
 
 
         &:hover {
@@ -65,8 +67,8 @@
         width: 65.6%;
         padding-top: 1rem;
 
-
-        .card {
+        .home-card {
+            border: 1px solid #aeaeae60;
             cursor: pointer;
 
 
@@ -75,7 +77,7 @@
                 height: 295px;
             }
             p {
-                padding: 1rem 0 1.5rem 0;
+                padding: 1rem 0 0 0;
                 font-size: 1.2rem;
             }
             span {
@@ -83,7 +85,7 @@
             }
             h6 {
                 color: #aeaeae;
-                padding: 1.5rem 0 1rem 0;
+                padding: 1.5rem 0 0 0;
             }
         }
     }

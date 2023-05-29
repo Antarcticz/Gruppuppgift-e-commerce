@@ -53,7 +53,7 @@ const Login = () => {
           <div>
             {loading && <p>Loading...</p>}
             {error && <p className='danger'>{error} </p>}
-            <button className='btn btn-submit' type='submit'>Sign In</button>
+            <button className='general-btn btn-submit' type='submit'>Sign In</button>
           </div>
         </form>
       </div>

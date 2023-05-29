@@ -5,10 +5,12 @@
     align-items: center;
     height: 100vh;
     margin: auto;
+    border: 1px solid;
+    border-color: #aeaeae60 transparent transparent transparent;
 
     form {
 
-        .mb-3 {
+        .form-group {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -20,6 +22,8 @@
             .form-control {
                 padding-bottom: 1rem;
                 outline: none;
+                background-color: #f0f0f0;
+                border: solid #f0f0f0;
             }
         }
         .btn-primary {

@@ -5,7 +5,7 @@ import '../scssPages/contact.scss'
 const Contact = () => {
 
   return (
-    <div className='contact-page'>
+    <div className='contact-page mb-5 pb-5'>
       <div className='hero-banner'>
         <h1 className='h1-banner'>CONTACT</h1>
         <h3 className='h3-banner'>HOME . CONTACT</h3>

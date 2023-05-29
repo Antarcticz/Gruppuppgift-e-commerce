@@ -36,7 +36,7 @@ const Section2 = ({ products }) => {
                 }
 
             </div>
-            <button className='btn btn-load'>LOAD MORE <img className='icon-sm' src="/Placeholders/rotate-cw.svg" alt="" /></button>
+            <button className='general-btn btn-load'>LOAD MORE <img className='icon-sm' src="/Placeholders/rotate-cw.svg" alt="" /></button>
         </div>
     )
 }

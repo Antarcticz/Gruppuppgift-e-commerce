@@ -6,7 +6,7 @@ const Section3 = () => {
   return (
     <div className="home-section-3">
       <div className="product-container">
-        <div className="card">
+        <div className="home-card">
           <img src="/Placeholders/369x310.svg" alt="" />
           <p>Table Lamp - scelerisque tempore</p>
           <span className='old-price'>$50.00</span><span>$30.00</span>
@@ -20,7 +20,7 @@ const Section3 = () => {
           <p>clita kasd gubergren no sea taki</p>
           <span>Discover More</span>
         </div>
-        <div className="card">
+        <div className="home-card">
           <img src="/Placeholders/369x310.svg" alt="" />
           <p>Table Lamp - scelerisque tempore</p>
           <span className='old-price'>$50.00</span><span>$30.00</span>

@@ -3,6 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    border: 1px solid;
+    border-color: #aeaeae60 transparent transparent transparent;
 }
 
 #login {
@@ -19,6 +21,7 @@
     h1 {
         padding-bottom: 3rem;
     }
+
     h3 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 12px;
@@ -73,15 +76,15 @@
         cursor: pointer;
 
         &:hover {
-           background-color: hsl(351, 95%, 69%);
-           transition: ease 0.5ms;
+            background-color: hsl(351, 95%, 69%);
+            transition: ease 0.5ms;
         }
+
         &:active {
-           background-color: hsl(351, 95%, 49%);
-           transition: ease 0.5ms;
+            background-color: hsl(351, 95%, 49%);
+            transition: ease 0.5ms;
         }
     }
-
 
     .no-account {
         display: flex;
@@ -107,6 +110,4 @@
     #password {
         height: 50px;
     }
-
-
 }
